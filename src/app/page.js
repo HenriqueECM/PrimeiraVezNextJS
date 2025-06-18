@@ -1,8 +1,12 @@
+import Header from '../components/Header';
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <div>
-      <h1>🚀 Olá, Next.js!</h1>
-      <p>Este é o meu primeiro projeto usando Next.js.</p>
+      <Header title="Bem-vindo à página inicial" />
+      <p>Esta é a página inicial do nosso site.</p>
+      <Link href="/about">Ir para a página de detalhes</Link>
     </div>
   );
 }
